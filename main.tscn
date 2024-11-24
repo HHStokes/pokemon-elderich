@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://do17h27sl15a0"]
+
+[ext_resource type="Texture2D" uid="uid://8gvf1083rhk1" path="res://PokemonSpritesReg/yigyam_spr.png" id="1_awcjv"]
+
+[node name="Main" type="Node2D"]
+
+[node name="BattleScene1" type="Node2D" parent="."]
+
+[node name="PlayerPartner" type="Node2D" parent="BattleScene1"]
+
+[node name="Sprite2D" type="Sprite2D" parent="BattleScene1/PlayerPartner"]
+texture = ExtResource("1_awcjv")
+
+[node name="HealthBar" type="ProgressBar" parent="BattleScene1/PlayerPartner"]
+offset_left = -88.0
+offset_top = -137.0
+offset_right = 99.0
+offset_bottom = -110.0
+
+[node name="RivalPartner" type="Node2D" parent="BattleScene1"]
